@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nuretdinov_rf\\source\\repos\\HomeWork\\TaskClass1\\Class1\\Task1\\Task1.csproj": {}
+    "C:\\Users\\nuretdinov_rf\\source\\repos\\HomeWork\\TaskClass1\\Class1\\Class1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nuretdinov_rf\\source\\repos\\HomeWork\\TaskClass1\\Class1\\Task1\\Task1.csproj": {
+    "C:\\Users\\nuretdinov_rf\\source\\repos\\HomeWork\\TaskClass1\\Class1\\Class1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nuretdinov_rf\\source\\repos\\HomeWork\\TaskClass1\\Class1\\Task1\\Task1.csproj",
-        "projectName": "Task1",
-        "projectPath": "C:\\Users\\nuretdinov_rf\\source\\repos\\HomeWork\\TaskClass1\\Class1\\Task1\\Task1.csproj",
+        "projectUniqueName": "C:\\Users\\nuretdinov_rf\\source\\repos\\HomeWork\\TaskClass1\\Class1\\Class1.csproj",
+        "projectName": "Class1",
+        "projectPath": "C:\\Users\\nuretdinov_rf\\source\\repos\\HomeWork\\TaskClass1\\Class1\\Class1.csproj",
         "packagesPath": "C:\\Users\\nuretdinov_rf\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nuretdinov_rf\\source\\repos\\HomeWork\\TaskClass1\\Class1\\Task1\\obj\\",
+        "outputPath": "C:\\Users\\nuretdinov_rf\\source\\repos\\HomeWork\\TaskClass1\\Class1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
