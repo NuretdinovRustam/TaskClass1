@@ -6,7 +6,11 @@ namespace Class1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Person tom = new();
+            tom.ChangeName();
+
         }
+
+
     }
 }
