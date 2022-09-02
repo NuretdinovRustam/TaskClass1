@@ -18,58 +18,54 @@ namespace Class1
         //Конструктор с 4 параметрами строка, строка, строка, число, для инициализации полей(имя, фамилия, отчество, возраст) класса.
         public Person(string n, string s, string p, int a) { name = n; surname = s; patronymic = p; age = a; }
         //Метод для установки возраста персоны, с проверкой на правильность ввода(возраст >= 0 и <= 200 )
-        public void PatchAge()
+        public void ChangeAge(int years)
         {
-            int old = int.Parse(Console.ReadLine());
-            if (old >= 0 | old <= 200)
+            if (years >= 0 | years <= 200)
             {
-                age = old;
+                age = years;
             }
         }
         //Метод для установки имени персоны, проверять длину строки.
-        public void ChangeName()
+        public void ChangeName(string nam)
         {
-            string line = Console.ReadLine();
-            if (line.Length <= 19)
-                name = line;
+            if (nam.Length <= 19)
+                name = nam;
             else
                 Console.WriteLine("Имя не должно содержать больше 20 символов");
         }
         //Метод для установки фамилии персоны, проверять длину строки.
-        public void ChangeSurname()
+        public void ChangeSurname(string surnam)
         {
-            string line = Console.ReadLine();
-            if (line.Length <= 19)
-                surname = line;
+            if (surnam.Length <= 19)
+                surname = surnam;
             else
                 Console.WriteLine("Фамилия не должна содержать больше 20 символов");
         }
         //Метод для установки отчества персоны, проверять длину строки.
-        public void ChangePatronymic()
+        public void ChangePatronymic(string patron)
         {
-            string line = Console.ReadLine();
-            if (line.Length <= 19)
-                patronymic = line;
+            if (patron.Length <= 19)
+                patronymic = patron;
             else
                 Console.WriteLine("Отчество не должно содержать больше 20 символов");
         }
         //Метод для получения возраста персоны.
-        public int PrintAge()
+        public int GetAge()
         {
             return age;
         }
         //Метод для получения имени персоны.
-        public string PrintName()
+        public string GetName()
         {
             return name;
         }
         //Метод для получения фамилии персоны.
-        public string PrintSurname()
+        public string GetSurname()
         {
             return surname;
         }
         //Метод для получения отчества персоны.
-        public string PrintPatronymic()
+        public string GetPatronymic()
         {
             return patronymic;
         }

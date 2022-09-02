@@ -9,12 +9,13 @@ namespace Class1
     class Kassa
     {
 
-        private Person kassir = new Person("", "", "", 35);
-        private Person client = new Person("", "", "", 35);
+        private Person kassir = new Person();
+        private Person client = new Person();
         public Kassa(Person person)
         {
-            kassir = person.
+            kassir = new Person();
         }
+
 
 
     }
