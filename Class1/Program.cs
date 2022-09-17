@@ -2,12 +2,20 @@
 
 namespace Class1
 {
-    class Program
+    partial class Program
     {
         static void Main(string[] args)
         {
-            Person tom = new();
-            tom.ChangeName();
+            Person kassir = new Person("Рустам", "Нуретдинов", "Флоритович", 35);
+            kassir.PrintPerson();
+            CashBox kassa = new CashBox(kassir);
+            Person client = new Person("Иван", "Иванов", "Иванович", 35);
+
+
+
+
+
+
 
         }
 

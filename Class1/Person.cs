@@ -8,73 +8,62 @@ namespace Class1
 {
     class Person
     {
-        private string name;
-        private string surname;
-        private string patronymic;
-        private int age;
+        private string FirstName;
+        private string SecondName;
+        private string LastName;
+        private int Age;
 
-        //Конструктор без параметров, устанавливающий значения свойство по умолчанию.
-        public Person() { name = "Имя"; surname = "Фамилия"; patronymic = "Отчество"; age = 25; }
-        //Конструктор с 4 параметрами строка, строка, строка, число, для инициализации полей(имя, фамилия, отчество, возраст) класса.
-        public Person(string n, string s, string p, int a) { name = n; surname = s; patronymic = p; age = a; }
-        //Метод для установки возраста персоны, с проверкой на правильность ввода(возраст >= 0 и <= 200 )
-        public void ChangeAge(int years)
+        public Person(string firstname, string secondname, string lastname, int age)
         {
-            if (years >= 0 | years <= 200)
-            {
-                age = years;
-            }
+            FirstName = firstname;
+            SecondName = secondname;
+            LastName = lastname;
+            Age = age;
         }
-        //Метод для установки имени персоны, проверять длину строки.
-        public void ChangeName(string nam)
+
+        public Person()
         {
-            if (nam.Length <= 19)
-                name = nam;
+            FirstName = "No FirstName";
+            SecondName = "No SecondName";
+            LastName = "No LastName";
+            Age = 0;
+        }
+
+        public void AddAge(int age)
+        {
+            if (age >= 0 & age <= 200)
+                Age = age;
             else
-                Console.WriteLine("Имя не должно содержать больше 20 символов");
+                System.Console.WriteLine("Возраст должен быть в пределах возраст >= 0 и <= 200");
         }
-        //Метод для установки фамилии персоны, проверять длину строки.
-        public void ChangeSurname(string surnam)
+        public void AddFirstName(string firstname)
         {
-            if (surnam.Length <= 19)
-                surname = surnam;
+            if (firstname.Length <= 20)
+                FirstName = firstname;
             else
-                Console.WriteLine("Фамилия не должна содержать больше 20 символов");
+                System.Console.WriteLine("Имя не должно превышать 20 символов");
         }
-        //Метод для установки отчества персоны, проверять длину строки.
-        public void ChangePatronymic(string patron)
+        public void AddLastName(string lastname)
         {
-            if (patron.Length <= 19)
-                patronymic = patron;
+            if (lastname.Length <= 20)
+                LastName = lastname;
             else
-                Console.WriteLine("Отчество не должно содержать больше 20 символов");
+                System.Console.WriteLine("Отчестно не должно превышать 20 символов");
         }
-        //Метод для получения возраста персоны.
-        public int GetAge()
+        public void AddSecondName(string secondname)
         {
-            return age;
+            if (secondname.Length <= 20)
+                SecondName = secondname;
+            else
+                System.Console.WriteLine("Фамилия не должно превышать 20 символов");
         }
-        //Метод для получения имени персоны.
-        public string GetName()
-        {
-            return name;
-        }
-        //Метод для получения фамилии персоны.
-        public string GetSurname()
-        {
-            return surname;
-        }
-        //Метод для получения отчества персоны.
-        public string GetPatronymic()
-        {
-            return patronymic;
-        }
-        //Метод вывода информации о персоне на экран.
         public void PrintPerson()
         {
-            Console.WriteLine($"Возраст: {age}, Имя: {name}, Фамилия: {surname}, Отчество: {patronymic}");
+            System.Console.WriteLine($"{FirstName} {SecondName} {LastName} {Age}");
         }
-
-
+        public int GetAge() => this.Age;
+        public string GetFirstName() => this.FirstName;
+        public string GetSecondName() => this.SecondName;
+        public string GetLastName() => this.LastName;
     }
 }
