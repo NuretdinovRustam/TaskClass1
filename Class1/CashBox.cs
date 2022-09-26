@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Class1
 {
 
-    class CashBox
+    class CashBox : Person
     {
         private Person EmployeeCashBox;
         private Person Client;
@@ -16,24 +16,19 @@ namespace Class1
         {
             EmployeeCashBox = employee;
         }
-        public void AddClient(string firstname, string secondname, string lastname, int age)
+        public void AddClient(Person client)
         {
-            Client.AddFirstName(firstname);
-
-            Client.AddSecondName(secondname);
-            Client.AddLastName(lastname);
-            Client.AddAge(age);
-            if (firstname == EmployeeCashBox.GetFirstName() & secondname == EmployeeCashBox.GetSecondName() & lastname == EmployeeCashBox.GetLastName())
+            if (client.GetFirstName() == EmployeeCashBox.GetFirstName() & client.GetSecondName() == EmployeeCashBox.GetSecondName() & client.GetLastName() == EmployeeCashBox.GetLastName())
             {
                 Console.WriteLine("фио клиента совпадает с фио кассира");
             }
+            else
+                Client = client;
         }
         public void PrintCashBox()
         {
-            Console.WriteLine($"Кассир: {EmployeeCashBox.GetFirstName()} {EmployeeCashBox.GetSecondName()} {EmployeeCashBox.GetLastName()}");
+            Console.WriteLine($"Кассир: {EmployeeCashBox.GetSecondName()} {EmployeeCashBox.GetFirstName()} {EmployeeCashBox.GetLastName()}\r\nКлиент: {Client.GetSecondName()} {Client.GetFirstName()} {Client.GetLastName()}");
         }
-
-
     }
 
 

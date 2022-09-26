@@ -59,7 +59,7 @@ namespace Class1
         }
         public void PrintPerson()
         {
-            System.Console.WriteLine($"{FirstName} {SecondName} {LastName} {Age}");
+            System.Console.WriteLine($"{SecondName} {FirstName} {LastName} {Age}");
         }
         public int GetAge() => this.Age;
         public string GetFirstName() => this.FirstName;
