@@ -8,23 +8,24 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\nuretdinov_rf\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\bart1\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nuretdinov_rf\\source\\repos\\HomeWork\\TaskClass1\\Class1\\Class1.csproj",
+      "projectUniqueName": "C:\\Users\\bart1\\Source\\Repos\\TaskClass1\\Class1\\Class1.csproj",
       "projectName": "Class1",
-      "projectPath": "C:\\Users\\nuretdinov_rf\\source\\repos\\HomeWork\\TaskClass1\\Class1\\Class1.csproj",
-      "packagesPath": "C:\\Users\\nuretdinov_rf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nuretdinov_rf\\source\\repos\\HomeWork\\TaskClass1\\Class1\\obj\\",
+      "projectPath": "C:\\Users\\bart1\\Source\\Repos\\TaskClass1\\Class1\\Class1.csproj",
+      "packagesPath": "C:\\Users\\bart1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bart1\\Source\\Repos\\TaskClass1\\Class1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\nuretdinov_rf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bart1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -55,7 +56,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -64,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

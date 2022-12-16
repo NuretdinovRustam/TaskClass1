@@ -14,17 +14,12 @@ namespace Class1
             CashBox kass = new CashBox(kassir);
             //Создать экземпляр класса Person клиент.
             //Person client = new Person("Иван", "Иванов", "Иванович", 35);
-            Person client = new Person("Рустам", "Нуретдинов", "Флоритович", 35);
+            Person client = new Person("Иванов", "Иванов", "Иванов", 40);
             //Установить для класса касса клиента.
             kass.AddClient(client);
             kass.PrintCashBox();
-
-
-
-
-
-
-
+            client = kassir;
+            client.PrintPerson();
 
         }
 
